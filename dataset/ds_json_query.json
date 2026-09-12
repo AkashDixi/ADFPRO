@@ -1,0 +1,21 @@
+{
+	"name": "ds_json_query",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_DataLake",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "Pokemon1.json",
+				"folderPath": "API",
+				"fileSystem": "sink"
+			}
+		},
+		"schema": {}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

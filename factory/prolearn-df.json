@@ -1,0 +1,15 @@
+{
+	"name": "prolearn-df",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "8137b5bc-a128-4858-8bbb-33fd8435790f",
+		"tenantId": "3075b689-a72b-477e-910c-31a3aa2cddd4"
+	}
+}

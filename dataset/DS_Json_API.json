@@ -1,0 +1,48 @@
+{
+	"name": "DS_Json_API",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_DataLake",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "pokemon.json",
+				"folderPath": "API",
+				"fileSystem": "sink"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"count": {
+					"type": "integer"
+				},
+				"next": {
+					"type": "string"
+				},
+				"previous": {
+					"type": "null"
+				},
+				"results": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"properties": {
+							"name": {
+								"type": "string"
+							},
+							"url": {
+								"type": "string"
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
